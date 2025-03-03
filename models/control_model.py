@@ -5,6 +5,7 @@ Controls data structure
 from pydantic import BaseModel
 from fastapi import Form
 
+
 class ControlCommand(BaseModel):
     mode: str
     start_time: str | None = None

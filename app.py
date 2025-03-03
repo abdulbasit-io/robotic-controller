@@ -14,6 +14,7 @@ async def server_page():
     return FileResponse("control.html")
 
 # collect form from webpage and control the robotic arm
+# note that time is being passed in 24 hours format
 @app.post("/control")
 async def control_robot(command: ControlCommand = Depends(ControlCommand.as_form)):
     print("Command: ", command)
