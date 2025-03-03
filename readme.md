@@ -82,7 +82,7 @@ The frontend is a simple HTML page with a form to collect control parameters. It
 
 ## How To Use
 
-Update the codebase by placing your robotic control logic in the controls folder. Then modify the main logic to accept an argument of the `ControlCommand` class  
+Update the codebase by placing your robotic control logic in the `controls` folder. Then modify your  logic to accept an argument of the `ControlCommand` class  
 
 Example  
 
