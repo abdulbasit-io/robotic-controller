@@ -53,8 +53,13 @@ robotic-controller/
 6. **If Running on  Raspberry Pi**:
     ```bash
     http://<raspberry-pi_IP>:8000
-    ```
+    ```  
 
+7. **To check if it's working from another device**:  
+    ```bash
+    http://<your_PC_IP_OR_raspberry_pi_IP>:8000
+    ```  
+    
 ##### Be sure to be on the same network as the raspberry before trying to access the page
 
 ## Usage
