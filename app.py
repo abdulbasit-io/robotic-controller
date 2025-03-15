@@ -1,10 +1,9 @@
 from fastapi import FastAPI, Depends
 from fastapi.responses import FileResponse, JSONResponse
 from models.control_model import ControlCommand
+# from controls.robotic_control import control_arm
 
 
-# import the robotic arm control module
-# Example: from controls.robotic_module import control_arm
 
 app = FastAPI()
 
@@ -20,7 +19,7 @@ async def control_robot(command: ControlCommand = Depends(ControlCommand.as_form
     print("Command: ", command)
     
     # pass the command to the robotic arm control module here
-    # Example: control_arm(command)
+    control_arm(command)
     
     return JSONResponse(content={"message": "✅ Command received successfully!"})
 
